@@ -1,0 +1,79 @@
+   /* Estilos para los cuadros laterales */
+ .sidebar {
+  width: 240px;
+  background-color: #2f4530; /* Verde suave */
+  padding: 10px;
+  box-sizing: border-box;
+  height: 100vh; /* Tienen la altura igual a la ventana */
+  position: sticky;
+  top: 0px;
+ }
+
+ .sidebar h2 {
+	font-size: 18px;
+	text-align: center;
+  }
+
+  .sidebar input,
+  .sidebar button {
+	width: 150px;
+	padding: 8px;
+	margin: 10px 0;
+  }
+
+  .sidebar ul {
+	list-style: none;
+	padding: 0;
+  }
+
+  .sidebar ul li {
+	padding: 8px;
+	border-bottom: 1px solid #49b542;
+	cursor: pointer;
+  }
+
+  .sidebar ul li:hover {
+	background-color: #408c3c;
+  }
+
+  .glowbtn {
+	background: #008927;
+	color: white;
+	padding: 12px 24px;
+	border: none;
+	font-size: 18px;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+	border-radius: 8px;
+	animation: glow 3s ease-out infinite;
+  }
+
+  .glowbtn::before {
+	content: "🛒 "; /* Ícono de carrito */
+	font-size: 15px;
+  }
+
+  .glowbtn::after {
+	content: " ➜"; /* Flecha */
+	font-size: 10px;
+	transition: transform 1s ease;
+  }
+
+  .glowbtn::after {
+	transform: translateX(0.75px); /* Animación de la flecha */
+  }
+
+  @keyframes glow {
+	0% {
+	  box-shadow: 0 0 5px #008927;
+	} /* Inicio: luz tenue */
+	10% {
+	  box-shadow: 0 0 20px #57a86e;
+	} /* Aumento del brillo */
+	100% {
+	  box-shadow: 0 0 5px #008927;
+	} /* Vuelve al inicio */
+  }
+
+ 

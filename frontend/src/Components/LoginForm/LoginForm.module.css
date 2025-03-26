@@ -1,0 +1,62 @@
+  /* Botón de inicio de sesión */
+  .loginBtn {
+	background-color: #388e3c;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	cursor: pointer;
+	font-size: 16px;
+	border-radius: 4px;
+  }
+
+  .loginBtn:hover {
+	background-color: #81c784;
+  }
+
+  /* Formulario de inicio de sesión */
+  .loginForm {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: white;
+	padding: 20px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	border-radius: 4px;
+	z-index: 99999;
+  }
+
+  .loginForm input {
+	padding: 8px;
+	margin: 10px 0;
+	width: 100%;
+	border: 1px solid #388e3c;
+	border-radius: 4px;
+  }
+
+  .loginForm button {
+	background-color: #388e3c;
+	color: white;
+	padding: 10px;
+	border: none;
+	width: 100%;
+	border-radius: 4px;
+	cursor: pointer;
+  }
+
+  .loginForm button:hover {
+	background-color: #81c784;
+  }
+
+  .closeBtn {
+	background-color: red;
+	color: white;
+	border: none;
+	padding: 5px 10px;
+	cursor: pointer;
+	font-size: 14px;
+	border-radius: 4px;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+  }

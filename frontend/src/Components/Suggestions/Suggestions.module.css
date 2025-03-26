@@ -1,0 +1,30 @@
+  /* Estilos para los cuadros laterales */
+  .suggestions {
+	width: 240px;
+	background-color: #2f4530; /* Verde suave */
+	padding: 10px;
+	box-sizing: border-box;
+	height: 100vh; /* Tienen la altura igual a la ventana */
+	position: sticky;
+	top: 0px;
+  }
+
+  .suggestions h2 {
+	font-size: 18px;
+	text-align: center;
+  }
+
+  .suggestions ul {
+	list-style: none;
+	padding: 0;
+  }
+
+  .suggestions ul li {
+	padding: 8px;
+	border-bottom: 1px solid #539f43;
+	cursor: pointer;
+  }
+
+  .suggestions ul li:hover {
+	background-color: #7bbc6e;
+  }

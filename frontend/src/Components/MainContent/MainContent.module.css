@@ -1,0 +1,37 @@
+/* Cuadro del medio (contenido) */
+.image-gallery img {
+	width: 100%;
+	height: auto;
+	margin-bottom: 10px;
+	transition: all 0.3s ease;
+  }
+
+  .image-gallery img:hover {
+	transform: scale(1.05);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Cuadro del medio (contenido) */
+  .MainContent {
+	flex-grow: 1;
+	padding: 20px;
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	height: 500px; /* Define la altura del cuadro central */
+	overflow-y: auto; /* Permite el scroll solo en el contenido del cuadro */
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	justify-content: space-between;
+  }
+
+  .MainContent img {
+	width: calc(33% - 10px);
+	height: 100px;
+	transition: all 0.3s ease;
+  }
+
+  .MainContent img:hover {
+	transform: scale(1.05);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
