@@ -2,7 +2,7 @@ import Header from "./Components/Header";
 import AllContent from "./Components/AllContent";
 import { useEffect } from "react";
 import axios from "axios";
-
+import Profile from "./Profile.tsx";
 function App() {
   useEffect(() => {
     axios
@@ -14,6 +14,7 @@ function App() {
     <div>
       <Header />
       <AllContent />
+      <Profile />
     </div>
   );
 }
