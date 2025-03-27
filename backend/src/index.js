@@ -29,6 +29,18 @@ app.get("/api/ruta-de-prueba", (req, res) => {
 	res.json({ mensaje: "Hola desde el backend" });
   });
 
+  //prueba de login
+//   app.post("/api/login", (req, res) => {
+// 	const { email, password } = req.body;
+  
+// 	// Simulación de credenciales correctas (esto luego se validará con la DB)
+// 	if (email === "usuario@example.com" && password === "123456") {
+// 	  return res.json({ mensaje: "Inicio de sesión exitoso", token: "fake-jwt-token" });
+// 	}
+  
+// 	res.status(401).json({ error: "Credenciales incorrectas" });
+//   });
+
 // Iniciar el servidor
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
